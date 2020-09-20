@@ -14,6 +14,5 @@ for sheet in reader.sheet_names:
 concated_dfs = pd.concat(dfs, axis=0)
 concated_dfs.to_excel(writer, sheet_name='一班和二班', index=False)
 
-
 writer.save()
 writer.close()
